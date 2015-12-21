@@ -1,0 +1,38 @@
+@import '../../node_modules/react-selectize/src/index.css'
+
+.column {
+  position: relative;
+  height: 220px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background-color: rgba(246,246,246,0.5);
+
+  h4 {
+    //font-style: italic;
+  }
+
+  input {
+    &:focus {
+      border-bottom: 0 solid white !important;
+      box-shadow: 0 0 0 0 !important;
+      max-width: 100%;
+    }
+  }
+
+  .simple-container{
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 90%;
+
+    .simple-option span{
+      font-size: 18px;
+      letter-spacing: .7px;
+      font-weight: normal;
+    }
+  }
+
+  .option-wrapper.highlight {
+    background-color: rgba(246,246,246,0.9) !important;
+  }
+}
