@@ -6,7 +6,7 @@ function getUserInfo() {
 
 function postUserInfo(datum) {
   var datam = JSON.stringify(datum)
-  console.log(JSON.parse(JSON.stringify(datam)))
+  // console.log(JSON.parse(JSON.stringify(datam)))
   return axios.post('https://script.google.com/macros/s/AKfycbwVPjEhtp4Jg7kWnVmvYLt6rL6UKrq-5kyIaXWVuZ1wDduqMdSl/exec', datam );
 }
 
@@ -33,7 +33,7 @@ var helpers = {
   },
   valueChange: function(val, title) {
     datas[title] = val
-    console.log(JSON.stringify(datas))
+    // console.log(JSON.stringify(datas))
   }
 };
 
